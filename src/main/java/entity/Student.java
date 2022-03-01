@@ -21,17 +21,18 @@ public class Student {
     @Column(name="email")
     private String email;
 
-    public Student(){
-        /**
-         * for this repo
-         */
-    }
-    public Student(Long id, String firstName, String lastName, String email) {
+
+    public Student(String firstName, String lastName, String email) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
     }
+
+    public Student() {
+
+    }
+
 
     public Long getId() {
         return id;
